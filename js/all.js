@@ -2599,37 +2599,52 @@ var country = [{
     _id: 98,
     Id: "C1_397000000A_000164"
 }];
+
+//DOM
 var area = document.querySelector('.selectbar');
 var area2 = document.querySelector('.btn1');
 var area3 = document.querySelector('.btn2');
 var area4 = document.querySelector('.btn3');
 var area5 = document.querySelector('.btn4');
 var list = document.querySelector('.listul');
-var areacountry=document.querySelector('.areacountry');
+var areacountry = document.querySelector('.areacountry');
 var len = country.length;
 
 //監聽updateList
 function updateList(e) {
     var select = e.target.value;
     var str = '';
-    var str2 ='';
+    var str2 = '';
     for (var i = 0; i < len; i++) {
         if (select == country[i].Zone) {
-            str += '<li class="list2"><img class="list2img" src="'+ country[i].Picture1 + '"><p><img class="listicon" src="img/icons_clock.png"> '+country[i].Opentime+'</p><p><img class="listicon" src="img/icons_pin.png"> '+country[i].Add+'</p><p><img class="listicon" src="img/icons_phone.png"> '+country[i].Tel+'</p><p class=" listpcon2"><img src="img/icons_tag.png">'+country[i].Ticketinfo+'</p></li>'
-            str2='<h4>'+country[i].Zone+'</h4>'
+            str += '<li class="list2"><img class="list2img" src="' + country[i].Picture1 + '"><p class="listp"><img src="img/map.png" style="width:18px">  ' + country[i].Name + '</p><p><img class="listicon" src="img/icons_clock.png"> ' + country[i].Opentime + '</p><p><img class="listicon" src="img/icons_pin.png"> ' + country[i].Add + '</p><p><img class="listicon" src="img/icons_phone.png"> ' + country[i].Tel + '</p><p class=" listpcon2"><img src="img/icons_tag.png">' + country[i].Ticketinfo + '</p></li>'
+            str2 = '<h4>' + country[i].Zone + '</h4>'
         }
     }
     list.innerHTML = str;
-    areacountry.innerHTML=str2;
+    areacountry.innerHTML = str2;
 }
-
 area.addEventListener('change', updateList, false);
 area2.addEventListener('click', updateList, false);
 area3.addEventListener('click', updateList, false);
 area4.addEventListener('click', updateList, false);
-area2.addEventListener('click', updateList, false);
-//回到最上層
-var Topbar = document.querySelector('.toTop');
-Topbar.addEventListener('click', function (e) {
-    window.scrollTo(0, 0);
-}, false);
+area5.addEventListener('click', updateList, false);
+area2.addEventListener('onload', updateList, false);
+
+//打開網頁就渲染
+window.onload = function () {
+    updateList2();
+};
+function updateList2() {
+    var select = '三民區';
+    var str = '';
+    var str2 = '';
+    for (var i = 0; i < len; i++) {
+        if (select == country[i].Zone) {
+            str += '<li class="list2"><img class="list2img" src="' + country[i].Picture1 + '"><p class="listp"><img src="img/map.png" style="width:18px">  ' + country[i].Name + '</p><p><img class="listicon" src="img/icons_clock.png"> ' + country[i].Opentime + '</p><p><img class="listicon" src="img/icons_pin.png"> ' + country[i].Add + '</p><p><img class="listicon" src="img/icons_phone.png"> ' + country[i].Tel + '</p><p class=" listpcon2"><img src="img/icons_tag.png">' + country[i].Ticketinfo + '</p></li>'
+            str2 = '<h4>' + country[i].Zone + '</h4>'
+        }
+    }
+    list.innerHTML = str;
+    areacountry.innerHTML = str2;
+}

@@ -139,11 +139,14 @@ h2 {
     }
     }
     li{
-        max-width: 49.9999%;
+        width: 464px;
+
         float: left;
         margin: 10px  10px 0 30px;
         background: #fff;
         box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+        border-radius: 5px;
+        box-shadow:1px 1px gray;
         p{
             font-family: AppleSystemUIFont;
             font-size: 16px;
@@ -156,23 +159,33 @@ h2 {
 .list2img{
     width: 464px;
     max-height: 155px;
+    border-radius:5px;
+
+}
+.listp{
+    font-family: SFNSDisplay;
+font-size: 24px;
+color: #000;
 
 }
 
 .listpcon2{
     padding: 0 0 40px 300px;
 }
-@media (max-width:1024px){
+@media (max-width:1023px){
 
     li{
         float: none;
-        max-width: 100%;
+        width: 100%;
         margin: 10px auto;
        
     }
     .list2img{
         width: 100%;
         background-size:cover;
+    }
+    .listpcon2{
+        padding: 0 0 40px 250px;
     }
 }
 
@@ -189,7 +202,6 @@ h2 {
          }
       .footer{
           background: #559AC8;
-          max-width: 1024px;
           padding: 30px;
           
           h3{
@@ -205,9 +217,6 @@ h2 {
             font-size: 14px;
             color: #FFD366;
           }
-      }
-      .areacountry{
-       
       }
       h4{
          text-align: center;
