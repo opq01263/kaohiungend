@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  background: #d1cece; }
+
+.header {
+  background-image: url(../img/the-urban-landscape-1698285.png);
+  background-size: cover;
+  max-height: 380px;
+  margin-bottom: 133px; }
+
+h1 {
+  font-family: 微軟正黑體;
+  font-size: 40px;
+  color: #FFFFFF;
+  padding: 60px;
+  text-align: center; }
+
+.selectbar {
+  background: rgba(255, 255, 255, 0.7);
+  border: 3px solid #FFFFFF;
+  border-radius: 3px;
+  max-width: 452px;
+  max-height: 48px;
+  font-family: 微軟正黑體;
+  font-size: 18px;
+  color: #000000;
+  line-height: 21px;
+  display: block;
+  margin: 0 auto; }
+
+.banner {
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px gray;
+  box-shadow: 1px 1px gray; }
+
+h2 {
+  font-family: AppleSystemUIFont;
+  font-size: 18px;
+  color: #000000;
+  padding: 20px 0 0 10px; }
+
+.btn {
+  font-family: PingFangTC-Regular;
+  font-size: 20px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 5px 25px;
+  margin: 20px 10px; }
+
+.btn1 {
+  margin-left: 50px;
+  background: #8A82CC; }
+
+.btn2 {
+  background: #FFA782; }
+
+.btn3 {
+  background: #F5D105; }
+
+.btn4 {
+  background: #559AC8; }
+
+.hr {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background: #999;
+  margin-bottom: 5px; }
+
+@media (max-width: 767px) {
+  .btn1 {
+    margin-left: 0px; }
+  .btn {
+    min-width: 49%;
+    float: none;
+    /* float style */
+    margin: 5px auto;
+    border-radius: 3px; }
+  h2 {
+    text-align: center;
+    margin-bottom: 10px; } }
+
+li {
+  max-width: 49.9999%;
+  float: left;
+  margin: 10px  10px 0 30px;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2); }
+  li p {
+    font-family: AppleSystemUIFont;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 10px;
+    padding: 10px 5px; }
+
+.list2img {
+  width: 464px;
+  max-height: 155px; }
+
+.listpcon2 {
+  padding: 0 0 40px 300px; }
+
+@media (max-width: 1024px) {
+  li {
+    float: none;
+    max-width: 100%;
+    margin: 10px auto; }
+  .list2img {
+    width: 100%;
+    background-size: cover; } }
+
+.topbtn img {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: 24px;
+  max-height: 24px;
+  display: block; }
+
+.topbtn:hover {
+  cursor: pointer; }
+
+.footer {
+  background: #559AC8;
+  max-width: 1024px;
+  padding: 30px; }
+  .footer h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: AppleSystemUIFont;
+    font-size: 14px;
+    color: #FFFFFF; }
+  .footer p {
+    text-align: center;
+    font-family: AppleSystemUIFont;
+    font-size: 14px;
+    color: #FFD366; }
+
+h4 {
+  text-align: center;
+  font-family: SFNSDisplay;
+  font-size: 36px;
+  color: #8A82CC;
+  margin-bottom: 15px; }
+
+.clearfix {
+  clear: both; }
