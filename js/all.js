@@ -2629,7 +2629,6 @@ area2.addEventListener('click', updateList, false);
 area3.addEventListener('click', updateList, false);
 area4.addEventListener('click', updateList, false);
 area5.addEventListener('click', updateList, false);
-area2.addEventListener('onload', updateList, false);
 
 //打開網頁就渲染
 window.onload = function () {
@@ -2647,4 +2646,13 @@ function updateList2() {
     }
     list.innerHTML = str;
     areacountry.innerHTML = str2;
+};
+
+
+//點擊回到最上面
+var moveTop = document.querySelector('.topbtn');
+moveTop.addEventListener('click',Top,false);
+function Top(){
+    event.preventDefault();
+	window.scrollTo(0,0);
 }
