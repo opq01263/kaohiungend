@@ -2635,11 +2635,11 @@ window.onload = function () {
     updateList2();
 };
 function updateList2() {
-    var select = "";
+    var select = '';
     var str = '';
     var str2 = '';
     for (var i = 0; i < len; i++) {
-        if (select == country[i].Ticketinfo) {
+        if (select == '') {
             str += '<li class="list2"><img class="list2img" src="' + country[i].Picture1 + '"><p class="listp"><img src="img/map.png" style="width:18px">  ' + country[i].Name + '</p><p><img class="listicon" src="img/icons_clock.png"> ' + country[i].Opentime + '</p><p><img class="listicon" src="img/icons_pin.png"> ' + country[i].Add + '</p><p><img class="listicon" src="img/icons_phone.png"> ' + country[i].Tel + '</p><p class=" listpcon2"><img src="img/icons_tag.png">' + country[i].Ticketinfo + '</p></li>'
             str2 = '<h4>高雄市全區域</h4>'
         }
